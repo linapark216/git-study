@@ -1,0 +1,1279 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+$mobile: "screen and (max-width:668px)";
+
+@mixin h-line {
+	width: 280px;
+	border-bottom: 1px solid #fff;
+	text-indent: -9999px;
+}
+
+@mixin sub {
+	color: #888;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+}
+
+@mixin pre {
+	color: #baa5d3;
+	font-size: 15px;
+	line-height: 23px;
+	text-align: center;
+}
+
+@mixin pic {
+	width: 316px;
+	height: 398px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+@mixin tit {
+	color: #888;
+	font-size: 30px;
+	font-weight: 500;
+	cursor: pointer;
+	> span {
+		color: #5f0080;
+	}
+}
+
+@mixin arrow {
+	display: block;
+	width: 160px;
+	height: 13px;
+	background-image: url(./../images/outline.png);
+	text-indent: -9999px;
+}
+
+@mixin cou {
+	width: 435px;
+	height: 247px;
+	text-indent: -9999px;
+}
+
+body {
+	#wrap {
+		width: 1280px;
+		margin: 0 auto;
+		font-family: 'Noto Sans KR';
+
+		@media #{$mobile} {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		> header {
+			position: relative;
+			height: 800px;
+			background-color: #5f0080;
+
+			@media #{$mobile} {
+				height: 600px;
+			}
+
+			> .logo {
+				position: absolute;
+				left: 50%;
+				top: 88px;
+				width: 193px;
+				height: 111px;
+				margin-left: -96px;
+				background-image: url(./../images/logo.png);
+				background-size: cover;
+				text-indent: -9999px;
+
+				@media #{$mobile} {
+					top: 60px;
+					width: 100px;
+					height: 58px;
+					margin-left: -50px;
+				}
+			}
+
+			> .line-1 {
+				position: absolute;
+				left: 238px;
+				top: 130px;
+				@include h-line;
+
+				@media #{$mobile} {
+					left: 50%;
+					top: 75px;
+					width: 130px;
+					margin-left: -200px;
+				}
+			}
+
+			> .line-2 {
+				position: absolute;
+				right: 238px;
+				top: 130px;
+				@include h-line;
+
+				@media #{$mobile} {
+					left: 50%;
+					top: 75px;
+					width: 130px;
+					margin-left: 65px;
+				}
+			}
+
+			> h2 {
+				position: absolute;
+				left: 50%;
+				top: 224px;
+				color: #eeedee;
+				font-size: 20px;
+				margin-left: -183px;
+
+				@media #{$mobile} {
+					top: 140px;
+					font-size: 16px;
+					margin-left: -150px;
+				}
+			}
+
+			> h3 {
+				position: absolute;
+				left: 50%;
+				top: 258px;
+				color: #eeedee;
+				font-size: 61px;
+				margin-left: -318px;
+
+				@media #{$mobile} {
+					top: 165px;
+					font-size: 34px;
+					margin-left: -186px;
+				}
+			}
+
+			> .phone {
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				margin-left: -182px;
+
+				@media #{$mobile} {
+					width: 270px;
+					height: 331px;
+					margin-left: -135px;
+				}
+
+				> img {
+					display: block;
+
+					@media #{$mobile} {
+						width: 100%;
+					}
+				}
+			}
+		} // end of header
+
+		> .cont1 {
+			position: relative;
+			height: 1967px;
+			background-color: #fff;
+
+			@media #{$mobile} {
+				height: 2170px;
+			}
+
+			> h2 {
+				position: absolute;
+				left: 50%;
+				top: 51px;
+				width: 104px;
+				height: 50px;
+				margin-left: -52px;
+				background-image: url(./../images/nom-1.png);
+				text-indent: -9999px;
+			}
+
+			> h3 {
+				position: absolute;
+				left: 50%;
+				top: 155px;
+				color: #5f0080;
+				font-size: 34px;
+				margin-left: -107px;
+
+				@media #{$mobile} {
+					font-size: 26px;
+					margin-left: -84px;
+				}
+			}
+
+			> h4 {
+				position: absolute;
+				left: 50%;
+				top: 205px;
+				@include sub;
+				margin-left: -167px;
+
+				@media #{$mobile} {
+					font-size: 14px;
+					font-weight: 400;
+					margin-left: -133px;
+				}
+			}
+
+			> .pre {
+				position: absolute;
+				left: 50%;
+				top: 300px;
+				@include pre;
+				margin-left: -225px;
+
+				@media #{$mobile} {
+					font-size: 12px;
+					margin-left: -180px;
+				}
+			}
+
+			> .option {
+				position: absolute;
+				left: 50%;
+				top: 412px;
+				width: 212px;
+				height: 47px;
+				margin-left: -106px;
+				background-image: url(./../images/tac-2.png);
+				text-indent: -9999px;
+				z-index: 100;
+
+				@media #{$mobile} {
+					width: 190px;
+					height: 42px;
+					margin-left: -95px;
+					background-size: cover;
+				}
+			}
+
+			> .line-3 {
+				position: absolute;
+				left: 0;
+				top: 422px;
+				width: 534px;
+				border-bottom: 1px solid #5f0080;
+				text-indent: -9999px;
+
+				@media #{$mobile} {
+					width: 250px;
+				}
+			}
+
+			> .line-4 {
+				position: absolute;
+				right: 0;
+				top: 422px;
+				width: 534px;
+				border-bottom: 1px solid #5f0080;
+				text-indent: -9999px;
+
+				@media #{$mobile} {
+					width: 250px;
+				}
+			}
+
+			> .menu {
+				> .mnu-1 {
+					position: absolute;
+					left: 238px;
+					top: 515px;
+					@include pic;
+					background-image: url(./../images/pic-1.png);
+
+					@media #{$mobile} {
+						left: 50%;
+						margin-left: -158px;
+					}
+				}
+
+				> .tit-1 {
+					position: absolute;
+					right: 307px;
+					top: 668px;
+					color: #454249;
+					font-size: 24px;
+					font-weight: 500;
+					cursor: pointer;
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 940px;
+						font-size: 20px;
+						margin-right: -150px;
+					}
+				}
+
+				> .tit-2 {
+					position: absolute;
+					right: 360px;
+					top: 731px;
+					@include tit;
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 980px;
+						font-size: 20px;
+						margin-right: -80px;
+					}
+				}
+
+				> .mnu-2 {
+					position: absolute;
+					right: 238px;
+					top: 1017px;
+					@include pic;
+					background-image: url(./../images/pic-2.png);
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 1060px;
+						margin-right: -158px;
+					}
+				}
+
+				> .tit-3 {
+					position: absolute;
+					left: 302px;
+					top: 1170px;
+					color: #454249;
+					font-size: 24px;
+					font-weight: 500;
+					cursor: pointer;
+
+					@media #{$mobile} {
+						left: 50%;
+						top: 1485px;
+						font-size: 20px;
+						margin-left: -150px;
+					}
+				}
+
+				> .tit-4 {
+					position: absolute;
+					left: 350px;
+					top: 1233px;
+					@include tit;
+
+					@media #{$mobile} {
+						left: 50%;
+						top: 1526px;
+						font-size: 20px;
+						margin-left: -94px;
+					}
+				}
+
+				> .mnu-3 {
+					position: absolute;
+					left: 238px;
+					top: 1519px;
+					@include pic;
+					background-image: url(./../images/pic-3.png);
+
+					@media #{$mobile} {
+						left: 50%;
+						top: 1610px;
+						margin-left: -158px;
+					}
+				}
+
+				> .tit-5 {
+					position: absolute;
+					right: 314px;
+					top: 1670px;
+					color: #454249;
+					font-size: 24px;
+					font-weight: 500;
+					cursor: pointer;
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 2035px;
+						font-size: 20px;
+						margin-right: -150px;
+					}
+				}
+
+				> .tit-6 {
+					position: absolute;
+					right: 360px;
+					top: 1733px;
+					@include tit;
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 2080px;
+						font-size: 20px;
+						margin-right: -80px;
+					}
+				}
+
+				> .arrow-1 {
+					position: absolute;
+					right: 475px;
+					top: 739px;
+					@include arrow;
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 985px;
+						width: 120px;
+						height: 9px;
+						margin-right: -8px;
+						background-size: cover;
+					}
+				}
+				> .arrow-2 {
+					position: absolute;
+					left: 335px;
+					top: 1241px;
+					@include arrow;
+
+					@media #{$mobile} {
+						left: 50%;
+						top: 1530px;
+						width: 120px;
+						height: 9px;
+						margin-left: -112px;
+						background-size: cover;
+					}
+				}
+				> .arrow-3 {
+					position: absolute;
+					right: 475px;
+					top: 1741px;
+					@include arrow;
+
+					@media #{$mobile} {
+						right: 50%;
+						top: 2085px;
+						width: 120px;
+						height: 9px;
+						margin-right: -8px;
+						background-size: cover;
+					}
+				}
+			}
+		} // end of cont1
+
+		> .cont2 {
+			position: relative;
+			height: 850px;
+			background-color: #fff;
+
+			@media #{$mobile} {
+				height: 790px;
+			}
+
+			> h2 {
+				position: absolute;
+				left: 50%;
+				top: 80px;
+				width: 104px;
+				height: 50px;
+				margin-left: -52px;
+				background-image: url(./../images/nom-2.png);
+				text-indent: -9999px;
+			}
+
+			> h3 {
+				position: absolute;
+				left: 50%;
+				top: 184px;
+				color: #5f0080;
+				font-size: 34px;
+				margin-left: -152px;
+
+				@media #{$mobile} {
+					font-size: 26px;
+					margin-left: -116px;
+				}
+			}
+
+			> h4 {
+				position: absolute;
+				left: 50%;
+				top: 254px;
+				@include sub;
+				margin-left: -248px;
+
+				@media #{$mobile} {
+					font-size: 14px;
+					font-weight: 400;
+					margin-left: -184px;
+					letter-spacing: -0.5px;
+				}
+			}
+
+			> .car {
+				position: absolute;
+				left: 50%;
+				top: 317px;
+				width: 525px;
+				height: 444px;
+				margin-left: -262px;
+				background-image: url(./../images/car.png);
+				text-indent: -9999px;
+
+				@media #{$mobile} {
+					width: 410px;
+					height: 347px;
+					margin-left: -205px;
+					background-size: cover;
+				}
+			}
+
+			> .pre {
+				position: absolute;
+				left: 50%;
+				bottom: 80px;
+				@include pre;
+				margin-left: -91px;
+
+				@media #{$mobile} {
+					font-size: 12px;
+					margin-left: -75px;
+				}
+			}
+		} // end of cont2
+
+		> .cont3 {
+			position: relative;
+			height: 790px;
+			background-color: #f6f6f6;
+
+			@media #{$mobile} {
+				height: 1000px;
+			}
+
+			> h2 {
+				position: absolute;
+				left: 50%;
+				top: 80px;
+				width: 104px;
+				height: 50px;
+				margin-left: -52px;
+				background-image: url(./../images/nom-3.png);
+				text-indent: -9999px;
+			}
+
+			> h3 {
+				position: absolute;
+				left: 50%;
+				top: 184px;
+				color: #5f0080;
+				font-size: 34px;
+				margin-left: -214px;
+
+				@media #{$mobile} {
+					font-size: 26px;
+					margin-left: -164px;
+				}
+			}
+
+			> h4 {
+				position: absolute;
+				left: 50%;
+				top: 254px;
+				@include sub;
+				margin-left: -218px;
+
+				@media #{$mobile} {
+					font-size: 14px;
+					font-weight: 400;
+					margin-left: -166px;
+					letter-spacing: -0.5px;
+				}
+			}
+
+			> .cou-1 {
+				position: absolute;
+				left: 166px;
+				top: 345px;
+				@include cou;
+				background-image: url(./../images/cou-1.png);
+				background-size: cover;
+
+				@media #{$mobile} {
+					left: 50%;
+					width: 360px;
+					height: 209px;
+					margin-left: -172px;
+					background-size: cover;
+				}
+			}
+
+			> .cou-2 {
+				position: absolute;
+				right: 166px;
+				top: 345px;
+				@include cou;
+				background-image: url(./../images/cou-2.png);
+				background-size: cover;
+
+				@media #{$mobile} {
+					left: 50%;
+					top: 590px;
+					width: 360px;
+					height: 209px;
+					margin-left: -172px;
+					background-size: cover;
+				}
+			}
+
+			> .pre {
+				position: absolute;
+				left: 50%;
+				bottom: 80px;
+				@include pre;
+				margin-left: -153px;
+
+				@media #{$mobile} {
+					font-size: 12px;
+					margin-left: -130px;
+				}
+			}
+		} // end of cont3
+
+		> .cont4 {
+			position: relative;
+			height: 790px;
+			background-color: #fff;
+
+			@media #{$mobile} {
+				height: 715px;
+			}
+
+			> h2 {
+				position: absolute;
+				left: 50%;
+				top: 80px;
+				width: 104px;
+				height: 50px;
+				margin-left: -52px;
+				background-image: url(./../images/nom-4.png);
+				text-indent: -9999px;
+			}
+
+			> h3 {
+				position: absolute;
+				left: 50%;
+				top: 184px;
+				color: #5f0080;
+				font-size: 34px;
+				margin-left: -196px;
+
+				@media #{$mobile} {
+					font-size: 26px;
+					margin-left: -150px;
+				}
+			}
+
+			> h4 {
+				position: absolute;
+				left: 50%;
+				top: 254px;
+				@include sub;
+				margin-left: -256px;
+
+				@media #{$mobile} {
+					font-size: 14px;
+					font-weight: 400;
+					margin-left: -193px;
+					letter-spacing: -0.6px;
+				}
+			}
+
+			> .cou-3 {
+				position: absolute;
+				left: 50%;
+				top: 345px;
+				@include cou;
+				margin-left: -217px;
+				background-image: url(./../images/cou-3.png);
+				background-size: cover;
+
+				@media #{$mobile} {
+					left: 50%;
+					width: 360px;
+					height: 209px;
+					margin-left: -172px;
+					background-size: cover;
+				}
+			}
+
+			> .pre {
+				position: absolute;
+				left: 50%;
+				bottom: 80px;
+				@include pre;
+				margin-left: -199px;
+
+				@media #{$mobile} {
+					font-size: 12px;
+					margin-left: -170px;
+				}
+			}
+		} // end of cont4
+
+		> .cont5 {
+			position: relative;
+			height: 830px;
+			background-color: #f6f6f6;
+
+			@media #{$mobile} {
+				height: 1150px;
+			}
+
+			> h2 {
+				position: absolute;
+				left: 50%;
+				top: 80px;
+				color: #5f0080;
+				font-size: 34px;
+				margin-left: -293px;
+
+				@media #{$mobile} {
+					top: 60px;
+					width: 270px;
+					font-size: 24px;
+					text-align: center;
+					margin-left: -130px;
+				}
+			}
+
+			> .best {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				left: 50%;
+				top: 167px;
+				width: 1120px;
+				margin-left: -560px;
+				z-index: 100;
+
+				@media #{$mobile} {
+					width: 410px;
+					flex-wrap: wrap;
+					margin-left: -205px;
+				}
+
+				> li {
+					width: 249px;
+					background-size: cover;
+					background-repeat: no-repeat;
+
+					@media #{$mobile} {
+						width: 200px;
+						height: 256px;
+					}
+
+					&:nth-child(1) {
+						background-image: url(./../images/pic-4.png);
+
+						@media #{$mobile} {
+							margin-bottom: 95px;
+						}
+					}
+					&:nth-child(2) {
+						background-image: url(./../images/pic-5.png);
+
+						@media #{$mobile} {
+							margin-bottom: 95px;
+						}
+					}
+					&:nth-child(3) {
+						background-image: url(./../images/pic-6.png);
+					}
+					&:nth-child(4) {
+						background-image: url(./../images/pic-7.png);
+					}
+
+					&:hover > a {
+						border: 3px solid #5f0080;
+						box-sizing: border-box;
+
+						@media #{$mobile} {
+							border: none;
+						}
+					}
+
+					> a {
+						display: block;
+						height: 319px;
+						text-indent: -9999px;
+					}
+				}
+			}
+
+			> .best-txt {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				left: 50%;
+				top: 513px;
+				width: 1050px;
+				margin-left: -530px;
+
+				@media #{$mobile} {
+					flex-wrap: wrap;
+					top: 440px;
+					width: 365px;
+					margin-left: -190px;
+					cursor: pointer;
+				}
+
+				> li {
+					font-size: 20px;
+
+					@media #{$mobile} {
+						font-size: 16px;
+					}
+
+					&:nth-child(1) {
+						@media #{$mobile} {
+							padding-bottom: 315px;
+						}
+					}
+
+					&:nth-child(2) {
+						@media #{$mobile} {
+							padding-right: 12px;
+						}
+					}
+
+					&:nth-child(3) {
+						@media #{$mobile} {
+							padding-left: 20px;
+						}
+					}
+
+					> a {
+						display: block;
+						color: #888;
+						text-align: center;
+					}
+				}
+			}
+
+			> .btn {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				left: 50%;
+				bottom: 60px;
+				width: 834px;
+				margin-left: -417px;
+
+				@media #{$mobile} {
+					flex-wrap: wrap;
+					width: 325px;
+					margin-left: -145px;
+				}
+
+				> .pro {
+					width: 381px;
+					background-image: url(./../images/btn-2.png);
+
+					@media #{$mobile} {
+						width: 290px;
+						height: 64px;
+						background-size: cover;
+						margin-bottom: 20px;
+					}
+
+					&:hover > a {
+						color: #5f0080;
+						background-image: url(./../images/btn-1.png);
+
+						@media #{$mobile} {
+							width: 290px;
+							height: 64px;
+							background-size: cover;
+						}
+					}
+
+					> a {
+						display: block;
+						height: 84px;
+						color: #fff;
+						font-size: 27px;
+						font-weight: 600;
+						line-height: 84px;
+						text-indent: 46px;
+
+						@media #{$mobile} {
+							font-size: 18px;
+							line-height: 64px;
+							text-indent: 43px;
+						}
+					}
+				}
+
+				> .sign {
+					width: 381px;
+					background-image: url(./../images/btn-2.png);
+
+					@media #{$mobile} {
+						width: 290px;
+						height: 64px;
+						background-size: cover;
+					}
+
+					&:hover > a {
+						color: #5f0080;
+						background-image: url(./../images/btn-1.png);
+
+						@media #{$mobile} {
+							width: 290px;
+							height: 64px;
+							background-size: cover;
+						}
+					}
+
+					> a {
+						display: block;
+						height: 84px;
+						color: #fff;
+						font-size: 27px;
+						font-weight: 600;
+						line-height: 84px;
+						text-indent: 64px;
+
+						@media #{$mobile} {
+							font-size: 18px;
+							line-height: 64px;
+							text-indent: 55px;
+						}
+					}
+				}
+			}
+		} // end of cont5
+
+		> footer {
+			position: relative;
+			height: 520px;
+			background-color: #fff;
+
+			@media #{$mobile} {
+				height: 680px;
+			}
+
+			> h2 {
+				position: absolute;
+				left: 80px;
+				top: 80px;
+				color: #222;
+				font-size: 19px;
+
+				@media #{$mobile} {
+					left: 10px;
+					top: 20px;
+					font-size: 16px;
+				}
+			}
+
+			> .inq {
+				position: absolute;
+				left: 80px;
+				top: 149px;
+
+				@media #{$mobile} {
+					left: 10px;
+					top: 70px;
+				}
+
+				> li {
+					margin-bottom: 43px;
+
+					@media #{$mobile} {
+						margin-bottom: 20px;
+					}
+
+					&:nth-child(2) {
+						width: 124px;
+						border: 1px solid #aaa;
+
+						@media #{$mobile} {
+							width: 100px;
+						}
+					}
+					&:nth-child(3) {
+						width: 124px;
+						border: 1px solid #aaa;
+
+						@media #{$mobile} {
+							width: 100px;
+						}
+					}
+
+					> span {
+						display: block;
+						color: #222;
+						font-size: 25px;
+						font-weight: 500;
+
+						@media #{$mobile} {
+							font-size: 20px;
+						}
+					}
+
+					> a {
+						display: block;
+						height: 33px;
+						color: #222;
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 33px;
+						text-align: center;
+
+						@media #{$mobile} {
+							height: 28px;
+							font-size: 12px;
+							line-height: 28px;
+						}
+					}
+				}
+			}
+
+			> .inq-t {
+				position: absolute;
+				left: 219px;
+				top: 150px;
+
+				@media #{$mobile} {
+					left: 130px;
+					top: 68px;
+				}
+
+				> li {
+					color: #222;
+
+					&:nth-child(1) {
+						margin-bottom: 47px;
+
+						@media #{$mobile} {
+							margin-bottom: 18px;
+						}
+					}
+
+					&:nth-child(2) {
+						margin-bottom: 51px;
+
+						@media #{$mobile} {
+							margin-bottom: 23px;
+						}
+					}
+
+					> .gray {
+						display: block;
+						color: #888;
+					}
+				}
+			}
+
+			> .f-mnu {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				right: 80px;
+				top: 143px;
+				width: 493px;
+
+				@media #{$mobile} {
+					left: 10px;
+					top: 230px;
+					width: 380px;
+				}
+
+				> li {
+					font-size: 14px;
+					font-weight: 500;
+
+					@media #{$mobile} {
+						font-size: 12px;
+						font-weight: 500;
+					}
+
+					&:hover > a {
+						color: #5f0080;
+					}
+
+					> a {
+						display: block;
+						color: #222;
+					}
+				}
+			}
+
+			> .submnu {
+				position: absolute;
+				left: 708px;
+				top: 190px;
+				color: #999;
+				font-size: 12px;
+				line-height: 18px;
+				letter-spacing: 0.14px;
+
+				@media #{$mobile} {
+					left: 10px;
+					top: 255px;
+					font-size: 11px;
+				}
+
+				> span {
+					color: #5f0080;
+					cursor: pointer;
+				}
+			}
+
+			> .icon {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				left: 710px;
+				top: 345px;
+				width: 170px;
+
+				@media #{$mobile} {
+					left: 10px;
+					top: 420px;
+				}
+
+				> li {
+					background-size: cover;
+
+					&:nth-child(1) {
+						width: 29px;
+						background-image: url(./../images/ft-1.png);
+					}
+					&:nth-child(2) {
+						width: 29px;
+						background-image: url(./../images/ft-2.png);
+					}
+					&:nth-child(3) {
+						width: 29px;
+						background-image: url(./../images/ft-3.png);
+					}
+					&:nth-child(4) {
+						width: 29px;
+						background-image: url(./../images/ft-4.png);
+					}
+					&:nth-child(5) {
+						width: 29px;
+						background-image: url(./../images/ft-5.png);
+					}
+
+					> a {
+						display: block;
+						height: 29px;
+						text-indent: -9999px;
+					}
+				}
+			}
+
+			> .f-line {
+				position: absolute;
+				left: 0;
+				bottom: 132px;
+				width: 1280px;
+				border-bottom: 1px solid #ddd;
+				text-indent: -9999px;
+
+				@media #{$mobile} {
+					bottom: 200px;
+					width: 100%;
+				}
+			}
+
+			> .icon-2 {
+				display: flex;
+				justify-content: space-between;
+				position: absolute;
+				left: 80px;
+				bottom: 80px;
+				width: 746px;
+				z-index: 100;
+
+				@media #{$mobile} {
+					width: 90%;
+					left: 10px;
+					bottom: 140px;
+				}
+
+				> li {
+					background-size: cover;
+
+					&:nth-child(1) {
+						width: 38px;
+						background-image: url(./../images/fter-1.png);
+					}
+					&:nth-child(2) {
+						width: 38px;
+						background-image: url(./../images/fter-2.png);
+					}
+					&:nth-child(3) {
+						width: 116px;
+						background-image: url(./../images/fter-3.png);
+					}
+
+					> a {
+						display: block;
+						height: 38px;
+						text-indent: -9999px;
+					}
+				}
+			}
+
+			> .icon-txt {
+				display: flex;
+				position: absolute;
+				left: 124px;
+				bottom: 82px;
+
+				@media #{$mobile} {
+					left: 10px;
+					bottom: 40px;
+					width: 90%;
+				}
+
+				> li {
+					color: #999;
+					font-size: 12px;
+					line-height: 18px;
+					letter-spacing: 0.14px;
+
+					@media #{$mobile} {
+						width: 150px;
+						font-size: 10px;
+						line-height: 14px;
+					}
+
+					&:nth-child(1) {
+						margin-right: 84px;
+
+						@media #{$mobile} {
+							margin-right: 45px;
+						}
+					}
+
+					&:nth-child(2) {
+						margin-right: 167px;
+
+						@media #{$mobile} {
+							margin-right: 40px;
+						}
+					}
+				}
+			}
+		} // end of footer
+	}
+}
