@@ -1,0 +1,18 @@
+#wrap > header {
+  position: relative;
+  height: 800px;
+  background-color: #5f0080;
+}
+#wrap > header > h1.logo {
+  position: absolute;
+  left: 50%;
+  top: 88px;
+  width: 193px;
+  background-image: url(../images/logo.png);
+  transform: translate(-50%, 0);
+}
+#wrap > header > h1.logo > a {
+  display: block;
+  height: 111px;
+  text-indent: -9999px;
+}/*# sourceMappingURL=style.css.map */
