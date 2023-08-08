@@ -1,0 +1,89 @@
+#wrap {
+  width: 1120px;
+  margin: 0 auto;
+}
+#wrap > h1,
+#wrap address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+#wrap .slides {
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+  border: 1px solid #000;
+}
+#wrap .slides > .slides-container {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: -1120px;
+  left: -2240px;
+  left: -3360px;
+  left: -4480px;
+  width: 5600px;
+  outline: 1px solid blue;
+}
+#wrap .slides > .slides-container > p {
+  width: 1120px;
+  outline: 1px solid red;
+  background-position: center center;
+  background-size: cover;
+}
+#wrap .slides > .slides-container > p:nth-child(1) {
+  background-image: url(../images/slide-1.jpg);
+}
+#wrap .slides > .slides-container > p:nth-child(2) {
+  background-image: url(../images/slide-2.jpg);
+}
+#wrap .slides > .slides-container > p:nth-child(3) {
+  background-image: url(../images/slide-3.jpg);
+}
+#wrap .slides > .slides-container > p:nth-child(4) {
+  background-image: url(../images/slide-4.jpg);
+}
+#wrap .slides > .slides-container > p:nth-child(5) {
+  background-image: url(../images/slide-5.jpg);
+}
+#wrap .slides > .slides-container > p > a {
+  display: block;
+  height: 450px;
+  text-indent: -9999px;
+}
+#wrap .slides > .slides-pagination {
+  position: absolute;
+  right: 90px;
+  top: 50%;
+  margin-top: -150px;
+}
+#wrap .slides > .slides-pagination > li {
+  width: 180px;
+}
+#wrap .slides > .slides-pagination > li:nth-child(1) {
+  background-image: url(../images/indicator-1.jpg);
+}
+#wrap .slides > .slides-pagination > li:nth-child(2) {
+  background-image: url(../images/indicator-2.jpg);
+}
+#wrap .slides > .slides-pagination > li:nth-child(3) {
+  background-image: url(../images/indicator-3.jpg);
+}
+#wrap .slides > .slides-pagination > li:nth-child(4) {
+  background-image: url(../images/indicator-4.jpg);
+}
+#wrap .slides > .slides-pagination > li:nth-child(5) {
+  background-image: url(../images/indicator-5.jpg);
+}
+#wrap .slides > .slides-pagination > li.on > a, #wrap .slides > .slides-pagination > li:hover > a {
+  border: 2px solid #87ceeb;
+  box-sizing: border-box;
+}
+#wrap .slides > .slides-pagination > li > a {
+  display: block;
+  height: 60px;
+  text-indent: -9999px;
+}/*# sourceMappingURL=style.css.map */
